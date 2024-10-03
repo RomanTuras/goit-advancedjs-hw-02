@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --white: #ffffff;
+  --light: #CFCFCF;
+  --dark-light: #989898;
+  --gray: #808080;
+  --dark: #2e2f42;
+  --accent: #4E75FF;
+  --accent-hover: #6C8CFF;
+
+  --light-lrimary: #333;
+}
+
+body {
+  color: var(--light-lrimary);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

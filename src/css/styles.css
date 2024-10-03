@@ -1,0 +1,7 @@
+/* Common styles */
+@import url('./reset.css');
+@import url('./base.css');
+
+/* Sections style */
+@import url('./snackbar.css');
+@import url('./timer.css');
