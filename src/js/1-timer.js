@@ -69,9 +69,9 @@ const render = value => {
 const countDown = () => {
   let difference = userSelectedDate - new Date();
   let value = convertMs(difference);
+  // c++ // QA
+  if (c == 10 || difference <= 1000) clearInterval(intervalId);
   render(value);
-  //c++ // QA
-  if (c == 10 || difference == 0) clearInterval(intervalId);
 }
 
 // Starting timer
