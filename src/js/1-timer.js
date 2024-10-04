@@ -70,14 +70,17 @@ const countDown = () => {
   let difference = userSelectedDate - new Date();
   let value = convertMs(difference);
   // c++ // QA
-  if (c == 10 || difference <= 1000) clearInterval(intervalId);
+  if (c == 10 || difference <= 1000) {
+    clearInterval(intervalId);
+    cal.disabled = false;
+  }
   render(value);
 }
 
 // Starting timer
 const startTimer = () => {
-  btn.disabled = true
-  cal.disabled = true
+  btn.disabled = true;
+  cal.disabled = true;
   intervalId = setInterval(countDown, 1000);
 }
 
