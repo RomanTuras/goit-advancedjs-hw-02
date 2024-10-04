@@ -71,8 +71,8 @@ const countDown = () => {
   let value = convertMs(difference);
   // c++ // QA
   if (c == 10 || difference <= 1000) {
-    clearInterval(intervalId);
     cal.disabled = false;
+    clearInterval(intervalId);
   }
   render(value);
 }
